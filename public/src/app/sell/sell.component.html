@@ -1,0 +1,100 @@
+
+    <!-- Body -->
+    <h3 class="mt-5 ml-5">LIST YOUR ITEM</h3>
+    <div class="inline-block">
+        <form class="m-5 shadow-lg p-3 mb-5 bg-white rounded" (submit)= sell()>
+            <fieldset>
+                <div class="form-group">
+                    <label class="underline">Title</label>
+                    <p>Use words people would search for when looking for your item</p>
+                    <input input type="text" name="item_info?.title" [(ngModel)] = "item_info.title" placeholder="Enter Title">
+                </div>
+                <div class="form-group">
+                    <label class="underline">Images</label>
+                    <p>Use high resolution pictures to promote your product</p>
+                    <input type="text" name="item_info?.imgUrl" [(ngModel)] = "item_info.imgUrl" placeholder="Enter Image URL">
+                </div>
+                <div class="form-group">
+                    <label class="underline">Brand</label>
+                    <p>Let your customer know what brand you are selling</p>
+                    <select type="text" name="brand" name="item_info?.brand" [(ngModel)] = "item_info.brand">
+                        <option value="Nike">Nike</option>
+                        <option value="Adidas">Adidas</option>
+                        <option value="Jordan">Jordan</option> 
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="underline">Condition</label>
+                    <p>Use a effective details about your item to upsell your item</p>
+                    <select type="text" name="item_info?.description" [(ngModel)] = "item_info.description">
+                        <option value="New">New</option>    
+                        <option value="Slighty used">Slightly used</option>    
+                        <option value="Used">Used</option> 
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="underline">Pricing</label>
+                    <p>Enter your desired price</p>
+                    <input type="text" name="item_info?.price" [(ngModel)] = "item_info.price" placeholder="$00.00">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Sell Now">
+            </fieldset>
+        </form>
+    </div>
+    <div class="inline-block quote">
+        <blockquote class="blockquote">
+            <p class="mb-0 fade-in">"Every luxury must be paid for, and everything is a luxury, starting with being in this world. Build your Palace today."</p>
+            <footer class="blockquote-footer fade-in"><cite title="Source Title">Stock Palace</cite></footer>
+        </blockquote>
+        <img class="item shadow-lg" src="https://www.yeezyboosts2019.com/wp-content/uploads/2018/07/New-adidas-Y-3-Kaiwa-Black-White-Shoes-1.jpg" alt="">
+    </div>
+            <!-- Footer -->
+	<section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Recent updates</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Get Started</a></li>
+                        <li><a>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Popular releases</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Get Started</a></li>
+                        <li><a>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Founders</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a>Angelo Liwanag</a></li>
+                        <li><a>Jaden Pham</a></li>
+                        <li><a>Teng Rithy Khling</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul>
+                    <li class="list-inline-item"><a><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a>Stock Palace</a></u> is a start up company that was inspired by Stockx. All rights reserved by Angelo Liwanag, Jaden Pham and Teng Rithy Khling</p>
+                </div>
+            </div>	
+        </div>
+    </section>

@@ -1,0 +1,68 @@
+<div class="view">
+    <h3 class="mt-5 ml-5">Item Detail</h3>
+    <div class="view-container m-5 shadow-lg p-5 mb-5 bg-white inline-block">
+        <div *ngIf="bag">
+            <p class="text-success">Added to cart ({{count}})</p>
+        </div>
+        <h5>Item title: {{item_data?.item.title}}</h5>
+        <h5>Price: ${{item_data?.item.price}}</h5>
+        <h5>Condition: {{item_data?.item.description}}</h5>
+        <h5>Brand: {{item_data?.item.brand}}</h5>
+        <button class="btn btn-primary" (click)=addToCart(item_data?.item)>Add to cart</button>
+        <button class="btn btn-primary"[routerLink]="['/cart']">View cart</button> 
+    </div>
+    <div class="inline-block quote">
+        <img class="item shadow-lg p-5" src="{{item_data?.item.imgUrl}}" alt="">
+    </div>
+</div>
+
+            <!-- Footer -->
+	<section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Recent updates</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Get Started</a></li>
+                        <li><a>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Popular releases</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Get Started</a></li>
+                        <li><a>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Founders</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a>Angelo Liwanag</a></li>
+                        <li><a>Jaden Pham</a></li>
+                        <li><a>Teng Rithy Khling</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul>
+                    <li class="list-inline-item"><a><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a>Stock Palace</a></u> is a start up company that was inspired by Stockx. All rights reserved by Angelo Liwanag, Jaden Pham and Teng Rithy Khling</p>
+                </div>
+            </div>	
+        </div>
+    </section>
